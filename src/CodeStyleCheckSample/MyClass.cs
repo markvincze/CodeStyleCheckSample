@@ -2,8 +2,14 @@
 
 namespace CodeStyleCheckSample
 {
-    public class MyClass
+    public class myClass
     {
+        // Public field
+        public string PublicField = "Foo";
+
+        // Private property casing
+        private string privateProp => "Qux";
+
         public void foo()
         {
             // Block without braces
@@ -22,11 +28,5 @@ namespace CodeStyleCheckSample
             // Tabs instead of spaces
         	Console.WriteLine("Baz");
         }
-    }
-
-    public class wrongCasing
-    {
-        // Public field
-        public string PublicField = "Foo";
     }
 }
